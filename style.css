@@ -1,0 +1,98 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #4b8fbd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  
+  /* Main Blog Content */
+  main {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    padding: 0 10px;
+  }
+  
+  .blog-post {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  p {
+    margin-bottom: 16px; /* Adjust the value as needed */
+  }
+  
+  /* Apply background image to the entire website */
+body {
+  font-family: Arial, sans-serif;
+  color: #857a7a;
+  line-height: 1.6;
+  background: url('stock-of-food-cooking-background-on-the-wooden-ai-generated-photo.png/1920x1080') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the whole screen */
+}
+
+  
+  .blog-post .content {
+    font-size: 1rem;
+    color: #080707;
+    margin: 10px 0;
+  }
+  
+  /* Links */
+  .blog-post .youtube-link,
+  .blog-post .read-more {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #e9583b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .blog-post .youtube-link:hover,
+  .blog-post .read-more:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin: 20px 0;
+    color: #777;
+  }
+  
