@@ -14,6 +14,64 @@
     
   </header>
 </head>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .visit-counter {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #ffffff;
+        padding: 8px 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #333;
+        opacity: 0.8;
+    }
+
+    .visit-count {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+    <div class="visit-counter">
+        <p>Visits: <span class="visit-count" id="visitCount">0</span></p>
+    </div>
+
+    <script>
+        // JavaScript code for visit counting
+        const visitCountElement = document.getElementById('visitCount');
+
+        // Check if visitCount is in localStorage, if not set it to 0
+        let visitCount = localStorage.getItem('visitCount');
+
+        if (visitCount === null) {
+            visitCount = 0; // Initialize count to 0 on first visit
+        } else {
+            visitCount = parseInt(visitCount); // Convert the stored value to an integer
+        }
+
+        // Increment the visit count
+        visitCount++;
+
+        // Update the visit count in localStorage
+        localStorage.setItem('visitCount', visitCount);
+
+        // Display the visit count
+        visitCountElement.textContent = visitCount;
+    </script>
+</body>
+</html>
+
   <main>
     <!-- Blog Post 1 -->
     <article class="blog-post">
