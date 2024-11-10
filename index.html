@@ -5,66 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Blog</title>
   <link rel="stylesheet" href="style.css">
-</head>
-  <title>User Visit Counter</title>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .visit-counter {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: #ffffff;
-        padding: 10px 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-        text-align: center;
-        font-size: 1em;
-        color: #333;
-    }
-
-    .visit-count {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: #28a745;
-    }
-</style>
-</head>
-<body>
-    <div class="visit-counter">
-        <p>Visits: <span class="visit-count" id="visitCount">0</span></p>
-    </div>
-
-    <script>
-        // JavaScript code for visit counting
-        const visitCountElement = document.getElementById('visitCount');
-
-        // Check if visitCount is in localStorage, if not set it to 0
-        let visitCount = localStorage.getItem('visitCount');
-
-        if (visitCount === null) {
-            visitCount = 0; // Initialize count to 0 on first visit
-        } else {
-            visitCount = parseInt(visitCount); // Convert the stored value to an integer
-        }
-
-        // Increment the visit count
-        visitCount++;
-
-        // Update the visit count in localStorage
-        localStorage.setItem('visitCount', visitCount);
-
-        // Display the visit count
-        visitCountElement.textContent = visitCount;
-    </script>
-</body>
-</html>
-
-<body>
+  
   <header>
     <h1>Flavors of Home: Cooking, Creativity, and Community</h1>
 
@@ -72,7 +13,7 @@
     <p>From Our Kitchen to Yours – A Journey of Taste and Tradition!</p>
     
   </header>
-
+</head>
   <main>
     <!-- Blog Post 1 -->
     <article class="blog-post">
