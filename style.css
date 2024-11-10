@@ -22,7 +22,12 @@
     text-align: center;
     width: 100%;
   }
-  
+   body {
+            background-image: url('');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
   header h1 {
     font-size: 2rem;
   }
